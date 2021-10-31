@@ -27,3 +27,18 @@ We use the Div2k dataset for training. its webpage is available at: [DIV2K](http
 * Benchmark dataset:
 * Data format: .png
 * PS: Data will be processed at ./src/data/Div2k.py
+
+
+## Cite
+
+The references introduced by .bib can be written as:
+
+```
+@inproceedings{Liz2021,
+  title={Information-Growth Attention Network for Image Super-Resolution.},
+  author={Zhuangzi Li, Ge Li, Thomas Li, Shan Liu and Wei Gao},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={544--552},
+  year={2021}
+}
+```
