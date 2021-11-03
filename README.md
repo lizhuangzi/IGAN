@@ -23,6 +23,22 @@ You can download our trained model by following links:
 
 8x Model: https://drive.google.com/file/d/19u1O1vtzql4zx78EtVgB9XSBj4vj3zyA/view?usp=sharing
 
+
+
+## Usage
+
+The training setting is in optionIGAN.py.
+
+The testing setting is in optionTest.py.
+
+You need change some file path according to your environment including "dir_data", "data_train", "data_test" "pre_train".
+
+Using "python mainIGAN4.py" for training
+
+Using "python TestModel.py" for testing. Before testing, you should change the "pre_train" in optionTest for load the correctly trained model.
+
+Using "python outputTest.py" for generating SR output.
+
 ## Dataset
 
 We use the Div2k dataset for training. its webpage is available at: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
