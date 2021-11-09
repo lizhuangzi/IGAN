@@ -115,7 +115,7 @@ class Trainer():
             averagessim = total_ssim*1.0/count
             if self.bestresult<averagepsnr:
                 self.bestresult = averagepsnr
-                torch.save(self.model.state_dict(), './savedModel/IGANX4_v2.parm')
+                torch.save(self.model.state_dict(), './savedModel/IGANX4.parm')
 
             self.EXPresult['psnr'].append(averagepsnr)
             self.EXPresult['ssim'].append(averagessim)
@@ -124,7 +124,7 @@ class Trainer():
             data_frame = pd.DataFrame(
                 data={'psnr': self.EXPresult['psnr'],'ssim':self.EXPresult['ssim'],'trainloss':self.EXPresult['trainloss']},
                 index=range(1, self.globleepoch + 1))
-            data_frame.to_csv(out_path + 'IGANx4_v2' + '8.csv', index_label='Epoch')
+            data_frame.to_csv(out_path + 'IGANx4' + '.csv', index_label='Epoch')
 
 
 

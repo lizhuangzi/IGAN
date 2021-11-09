@@ -22,7 +22,7 @@ parser.add_argument('--seed', type=int, default=1,
 parser.add_argument('--benchmark4x', type=int, default=1,
                     help='benchmark4x')
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='/home/lizhuangzi/',
+parser.add_argument('--dir_data', type=str, default='/mnt/cloud_disk/LZZData',
                     help='dataset directory')
 parser.add_argument('--dir_demo', type=str, default='../test',
                     help='demo image directory')
