@@ -12,7 +12,17 @@ It is widely believed that a high-resolution (HR) image contains more productive
 ![image](https://github.com/lizhuangzi/IGAN/blob/main/Fig/Framework.png)
 
 
-## Requirements
+## Requirements (Our setting)
+
+PyTorch 1.4.0
+
+Torchvision 0.5.0
+
+Scikit-image 0.15.0
+
+Numpy 1.18.5
+
+Tqdm 4.50.0
 
 
 
@@ -48,8 +58,51 @@ We use the Div2k dataset for training. its webpage is available at: [DIV2K](http
 * Testing: 100 images
 * Benchmark dataset:
 * Data format: .png
-* PS: Data will be processed at ./src/data/Div2k.py
 
+The Div2k images shuould be put as follows:
+```
+DIV2K
+├── DIV2K_train_HR
+│   ├── 0001.png
+│   ├─ ...
+│   └── 0900.png
+├── DIV2K_train_LR_bicubic
+│   ├── X2
+│   │   ├── 0001x2.png
+│   │   ├─ ...
+│   │   └── 0900x2.png
+│   ├── X3
+│   │   ├── 0001x3.png
+│   │   ├─ ...
+│   │   └── 0900x3.png
+│   └── X4
+│       ├── 0001x4.png
+│       ├─ ...
+│       └── 0900x4.png
+```
+
+if you test result on Set5, the file should be listed as:
+
+```
+Set5
+├── HR
+│   ├── baby.png
+│   ├─ ...
+│   └── butterfly.png
+├── BicDown
+│   ├── X2
+│   │   ├── X2down_baby.png
+│   │   ├─ ...
+│   │   └── X2down_butterfly.png
+│   ├── X4
+│   │   ├── X4down_baby.png
+│   │   ├─ ...
+│   │   └── X4down_butterfly.png
+│   └── X8
+│       ├── X8down_baby.png
+│       ├─ ...
+│       └── X8down_butterfly.png
+```
 
 ## Cite
 
