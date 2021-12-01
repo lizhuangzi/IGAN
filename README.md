@@ -1,6 +1,5 @@
 # Information-Growth Attention Network for Image Super-Resolution
 
-***** *I am now clearing up my code, and I will publish code within the next few days.**
 
 This is the code of ACM Multimedia 2021 Paper: Information-Growth Attention Network for Image Super-Resolution
 
